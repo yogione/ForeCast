@@ -33,15 +33,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func parseJason(data: Data){
         
         do {
-            let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as! [String:Any]
-            print("JSON: \(jsonResult)")
-            let flavorsArray = jsonResult["flavors"] as! [[String:Any]]
+            let jsonResult = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! NSDictionary //[String:Any]
+           // print("JSON: \(jsonResult)")
+            
+         //   let currentWeather = jsonResult["currently"] as? [String:Any] ?? nil
+            
+            if let currentWeatherDict = jsonResult["currently"] as? NSDictionary {
+                
+            let temp = currentWeatherDict["temperature"] as? String ?? "no data"
+            let time = currentWeatherDict["time"] as? String ?? "no data"
+                print("currently: \(currentWeatherDict), time:\(time) , temp: \(temp)")
+                
+            }
+            
+            
+          //  let icon = jsonResult["timezone"] as? String ?? "no data"
+            
+           /* let flavorsArray = jsonResult["temperature"] as! [[String:Any]]
             for flavorDict in flavorsArray {
                 print("Flavor:\(flavorDict)")
             }
             for flavorDict in flavorsArray {
-                print("Flavor:\(flavorDict["name"])")
-            }
+                print("Flavor:\(flavorDict["summary"])")
+            } */
             
         } catch {
             print("JSON Parsing Error")
@@ -106,7 +120,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 print("Got Data: \(recvData)")
                 let dataString = String.init(data: recvData, encoding: .utf8)
                 print("Got Data String: \(dataString)")
-                self.parseItunesJason(data: recvData)
+                self.parseJason(data: recvData)
                 
             } else {
                 print("Got data of length 0")
