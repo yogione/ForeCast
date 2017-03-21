@@ -14,6 +14,13 @@
 		16E4E0011E7D72D500C609D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E4DFFF1E7D72D500C609D2 /* LaunchScreen.storyboard */; };
 		16E4E0091E7D732000C609D2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E4E0081E7D732000C609D2 /* Reachability.swift */; };
 		16E4E00B1E80C3BC00C609D2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E4E00A1E80C3BC00C609D2 /* Location.swift */; };
+		16E4E00D1E81CA4F00C609D2 /* cloudy.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E4E00C1E81CA4F00C609D2 /* cloudy.png */; };
+		16E4E00F1E81CA6A00C609D2 /* fog.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E4E00E1E81CA6A00C609D2 /* fog.png */; };
+		16E4E0111E81CA7600C609D2 /* sleet.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E4E0101E81CA7600C609D2 /* sleet.png */; };
+		16E4E0131E81CA8600C609D2 /* snow.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E4E0121E81CA8600C609D2 /* snow.png */; };
+		16E4E0151E81CA9100C609D2 /* sunny.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E4E0141E81CA9100C609D2 /* sunny.png */; };
+		16E4E0171E81CCA700C609D2 /* wind.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16E4E0161E81CCA700C609D2 /* wind.jpg */; };
+		16E4E0191E81CF3A00C609D2 /* rain.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E4E0181E81CF3A00C609D2 /* rain.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		16E4E0021E7D72D500C609D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16E4E0081E7D732000C609D2 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		16E4E00A1E80C3BC00C609D2 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		16E4E00C1E81CA4F00C609D2 /* cloudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudy.png; sourceTree = "<group>"; };
+		16E4E00E1E81CA6A00C609D2 /* fog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fog.png; sourceTree = "<group>"; };
+		16E4E0101E81CA7600C609D2 /* sleet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sleet.png; sourceTree = "<group>"; };
+		16E4E0121E81CA8600C609D2 /* snow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snow.png; sourceTree = "<group>"; };
+		16E4E0141E81CA9100C609D2 /* sunny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunny.png; sourceTree = "<group>"; };
+		16E4E0161E81CCA700C609D2 /* wind.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wind.jpg; sourceTree = "<group>"; };
+		16E4E0181E81CF3A00C609D2 /* rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rain.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +77,14 @@
 				16E4E00A1E80C3BC00C609D2 /* Location.swift */,
 				16E4E0081E7D732000C609D2 /* Reachability.swift */,
 				16E4DFFA1E7D72D400C609D2 /* Main.storyboard */,
+				16E4E0101E81CA7600C609D2 /* sleet.png */,
+				16E4E0141E81CA9100C609D2 /* sunny.png */,
+				16E4E0161E81CCA700C609D2 /* wind.jpg */,
+				16E4E0181E81CF3A00C609D2 /* rain.png */,
 				16E4DFFD1E7D72D400C609D2 /* Assets.xcassets */,
+				16E4E0121E81CA8600C609D2 /* snow.png */,
+				16E4E00E1E81CA6A00C609D2 /* fog.png */,
+				16E4E00C1E81CA4F00C609D2 /* cloudy.png */,
 				16E4DFFF1E7D72D500C609D2 /* LaunchScreen.storyboard */,
 				16E4E0021E7D72D500C609D2 /* Info.plist */,
 			);
@@ -131,7 +152,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				16E4E0011E7D72D500C609D2 /* LaunchScreen.storyboard in Resources */,
+				16E4E0191E81CF3A00C609D2 /* rain.png in Resources */,
+				16E4E0151E81CA9100C609D2 /* sunny.png in Resources */,
+				16E4E0111E81CA7600C609D2 /* sleet.png in Resources */,
+				16E4E00D1E81CA4F00C609D2 /* cloudy.png in Resources */,
+				16E4E0171E81CCA700C609D2 /* wind.jpg in Resources */,
 				16E4DFFE1E7D72D400C609D2 /* Assets.xcassets in Resources */,
+				16E4E00F1E81CA6A00C609D2 /* fog.png in Resources */,
+				16E4E0131E81CA8600C609D2 /* snow.png in Resources */,
 				16E4DFFC1E7D72D400C609D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

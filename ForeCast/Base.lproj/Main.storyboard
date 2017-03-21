@@ -102,6 +102,7 @@
                         <outlet property="searchField" destination="pvc-Ex-Mzc" id="ufN-WT-yjP"/>
                         <outlet property="summaryLabel" destination="egc-Qw-CBI" id="Tul-pW-vOW"/>
                         <outlet property="tempLabel" destination="qkE-LG-nFC" id="uvg-By-Buf"/>
+                        <outlet property="weatherImageView" destination="UAL-ua-wpK" id="hDn-T0-Hjq"/>
                         <outlet property="windspeedLabel" destination="ZI2-C4-d6U" id="boD-5u-gsY"/>
                     </connections>
                 </viewController>

@@ -31,10 +31,13 @@ class ViewController: UIViewController {
     @IBOutlet var iconLabel              :UILabel!
     @IBOutlet var humidityLabel          :UILabel!
     @IBOutlet var windspeedLabel         :UILabel!
+    @IBOutlet var weatherImageView       :UIImageView!
+    var imageToAdd: UIImage?
     
     @IBOutlet var networkStatusLabel    :UILabel!
     @IBOutlet var searchField           :UITextField!
-    @IBOutlet var forecastTableView        :UITableView!
+   // @IBOutlet var forecastTableView        :UITableView!
+    
     var locationMgr = CLLocationManager()
     
     //MARK:- geo coding methods
@@ -75,7 +78,10 @@ class ViewController: UIViewController {
                 }
                 print("placemarks: \(placemark)")
                  print(" lat: \(placemark.location!.coordinate.latitude), lon: \(placemark.location!.coordinate.longitude)")
-                
+                self.searchedLoc.locationName = searchText
+                self.searchedLoc.locationLat = placemark.location!.coordinate.latitude
+                self.searchedLoc.locationLon = placemark.location!.coordinate.longitude
+                self.getFilePressed(location: self.searchedLoc)
             }
         }
     }
@@ -135,13 +141,37 @@ class ViewController: UIViewController {
     }
     
     func updateUI(loc: Location){
-        locationNameLabel.text = loc.locationName
+        locationNameLabel.text = "\(loc.locationName!)"
         summaryLabel.text = "summary: \(loc.weatherSummary!)"
         tempLabel.text = "temp: \(loc.temp!)"
         iconLabel.text = "icon: \(loc.icon!)"
         humidityLabel.text = "humidity: \(loc.humidity!)"
         windspeedLabel.text = "wind: \(loc.windspeed!)"
+       // imageToAdd = UIImage(named: "fog.png")
         
+        let iconValueToSwitch = "\(loc.icon!)"
+        print("in update ui func\(iconValueToSwitch)")
+        
+        //  clear-day, clear-night, rain, snow, sleet, wind, fog, cloudy, partly-cloudy-day, or partly-cloudy-night
+       switch iconValueToSwitch {
+        case "rain":
+            weatherImageView.image = UIImage(named: "rain")
+           // weatherImageView.image = imageToAdd
+       case "clear-day", "clear-night":
+            weatherImageView.image = UIImage(named: "sunny")
+       case "sleet":
+            weatherImageView.image = UIImage(named: "sleet")
+       case "wind":
+            weatherImageView.image = UIImage(named: "wind")
+       case "snow":
+            weatherImageView.image = UIImage(named: "snow")
+       case "fog":
+        weatherImageView.image = UIImage(named: "fog")
+
+        default:
+            weatherImageView.image = UIImage(named: "cloudy")
+        
+        }
     }
     
     func getFile(filename: String){
