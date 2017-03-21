@@ -13,6 +13,7 @@
 		16E4DFFE1E7D72D400C609D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16E4DFFD1E7D72D400C609D2 /* Assets.xcassets */; };
 		16E4E0011E7D72D500C609D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E4DFFF1E7D72D500C609D2 /* LaunchScreen.storyboard */; };
 		16E4E0091E7D732000C609D2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E4E0081E7D732000C609D2 /* Reachability.swift */; };
+		16E4E00B1E80C3BC00C609D2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E4E00A1E80C3BC00C609D2 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		16E4E0001E7D72D500C609D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16E4E0021E7D72D500C609D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16E4E0081E7D732000C609D2 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		16E4E00A1E80C3BC00C609D2 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				16E4DFF61E7D72D400C609D2 /* AppDelegate.swift */,
 				16E4DFF81E7D72D400C609D2 /* ViewController.swift */,
+				16E4E00A1E80C3BC00C609D2 /* Location.swift */,
 				16E4E0081E7D732000C609D2 /* Reachability.swift */,
 				16E4DFFA1E7D72D400C609D2 /* Main.storyboard */,
 				16E4DFFD1E7D72D400C609D2 /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			files = (
 				16E4DFF91E7D72D400C609D2 /* ViewController.swift in Sources */,
 				16E4DFF71E7D72D400C609D2 /* AppDelegate.swift in Sources */,
+				16E4E00B1E80C3BC00C609D2 /* Location.swift in Sources */,
 				16E4E0091E7D732000C609D2 /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
